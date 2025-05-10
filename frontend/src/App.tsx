@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Box, Tab, Tabs, Container, Typography } from '@mui/material';
 import 'leaflet/dist/leaflet.css';
-import { Header, NearestVenuesTab, PopularByHourTab, VenueFlowTab, MapComponent } from './components';
+import { Header, NearestVenuesTab, PopularByHourTab, NextDestinationTab, MapComponent } from './components';
 import { Category, Venue, PopularCategory, SelectChangeEvent } from './types';
 import { fetchCategories, fetchNearestVenues, fetchPopularCategoriesByHour, fetchVenueFlow } from './utils/api';
 import './styles/common.css';
@@ -239,7 +239,7 @@ function App() {
         >
           <Tab label="Nearest Venues" />
           <Tab label="Popular by Hour" />
-          <Tab label="Venue Flow" />
+          <Tab label="Next Destination" />
         </Tabs>
         
         <Box sx={{ 
@@ -277,7 +277,7 @@ function App() {
               onCategorySelect={handleCategorySelect}
             />
           ) : (
-            <VenueFlowTab
+            <NextDestinationTab
               venueId={venueId}
               timeRange={timeRange}
               k={flowK}
