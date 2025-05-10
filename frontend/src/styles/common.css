@@ -1,0 +1,66 @@
+/* Common styles for input fields */
+.MuiTextField-root {
+  margin-bottom: 8px;
+}
+
+.MuiInputLabel-root {
+  color: #666;
+}
+
+.MuiInputLabel-root.Mui-focused {
+  color: #9a3a58 !important;
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 8px !important;
+  ;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #ffb3b3;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #9a3a58 !important;
+  ;
+}
+
+.MuiFormHelperText-root {
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Common styles for select fields */
+.MuiSelect-select {
+  border-radius: 8px;
+}
+
+.MuiSelect-outlined {
+  border-radius: 8px;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-radius: 8px;
+}
+
+.MuiSelect-select.Mui-focused {
+  background-color: transparent !important;
+}
+
+
+/* Common styles for menu items */
+.MuiMenuItem-root {
+  transition: background-color 0.2s ease !important;
+}
+
+.MuiMenuItem-root:hover {
+  background-color: #fff5f5 !important;
+}
+
+.MuiMenuItem-root.Mui-selected {
+  background-color: #fff0f0 !important;
+}
+
+.MuiMenuItem-root.Mui-selected:hover {
+  background-color: #ffe6e6 !important;
+}

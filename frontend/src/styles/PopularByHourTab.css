@@ -1,0 +1,121 @@
+.popular-by-hour-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  height: 95%;
+  overflow: auto;
+  min-width: 300px;
+  flex: 0 0 320px;
+}
+
+.popular-by-hour-container .popular-by-hour-title {
+  font-weight: 700 !important;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 8px;
+  color: #9a3a58 !important;
+  font-size: 1.25rem !important;
+}
+
+.popular-by-hour-container .time-slider {
+  color: #9a3a58 !important;
+  margin-bottom: 16px;
+}
+
+.popular-by-hour-container .time-display {
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
+  color: #9a3a58 !important;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.popular-by-hour-container .categories-container {
+  background-color: #ffe3aa;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.popular-by-hour-container .categories-title {
+  font-weight: 700 !important;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 8px;
+  color: #9a3a58 !important;
+  font-size: 1.25rem !important;
+}
+
+.popular-by-hour-container .categories-list {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.popular-by-hour-container .category-item {
+  background-color: white;
+}
+
+.popular-by-hour-container .category-item:hover {
+  background-color: #ffccd5 !important;
+}
+
+.popular-by-hour-container .category-item.selected {
+  background-color: #ffccd5 !important;
+}
+
+.popular-by-hour-container .category-name {
+  font-weight: 700 !important;
+  color: #9a3a58 !important;
+}
+
+.popular-by-hour-container .category-count {
+  color: #9a3a58 !important;
+}
+
+.popular-by-hour-container .venues-container {
+  background-color: white;
+  border-radius: 16px;
+  border: 2px solid #f0f0f0;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.popular-by-hour-container .venues-title {
+  font-weight: 700 !important;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 8px;
+  color: #9a3a58 !important;
+  font-size: 1.25rem !important;
+}
+
+.popular-by-hour-container .venue-item {
+  margin-bottom: 8px;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.popular-by-hour-container .venue-item.top {
+  background-color: #ffccd5 !important;
+}
+
+.popular-by-hour-container .venue-item:not(.top) {
+  background-color: #f5f5f5;
+}
+
+.popular-by-hour-container .venue-count {
+  font-weight: 500;
+  color: #9a3a58 !important;
+}
+
+.popular-by-hour-container .venue-count.top {
+  font-weight: 700 !important;
+} 

@@ -1,0 +1,60 @@
+:root {
+  --pastel-pink: #ffe4ec;
+  --pastel-yellow: #fff7d6;
+  --pastel-green: #e6f9e0;
+  --pastel-orange: #ffe9d6;
+  --pastel-red: #ffb3b3;
+  --pastel-border: #f8b4c2;
+  --pastel-shadow: 0 4px 16px rgba(248, 180, 194, 0.15);
+  --main-bg: #fff8f3;
+  --main-text: #4a2c2a;
+}
+
+body {
+  background: var(--main-bg);
+  color: var(--main-text);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  box-shadow: var(--pastel-shadow);
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+}
+
+button:hover {
+  background-color: #ffe9d6;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--pastel-pink);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--pastel-border);
+  border-radius: 8px;
+}
