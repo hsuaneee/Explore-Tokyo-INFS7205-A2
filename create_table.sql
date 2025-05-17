@@ -25,4 +25,16 @@ CREATE INDEX IF NOT EXISTS idx_checkins_geom ON checkins USING GIST (geom);
 CREATE INDEX IF NOT EXISTS idx_checkins_user_id ON checkins(user_id);
 CREATE INDEX IF NOT EXISTS idx_checkins_venue_id ON checkins(venue_id);
 CREATE INDEX IF NOT EXISTS idx_checkins_timestamp ON checkins(timestamp);
-CREATE INDEX IF NOT EXISTS idx_checkins_venue_category_id ON checkins(venue_category_id); 
+CREATE INDEX IF NOT EXISTS idx_checkins_venue_category_id ON checkins(venue_category_id);
+
+-- Create index for venue category to improve KNN query performance
+CREATE INDEX IF NOT EXISTS idx_venue_category ON checkins(venue_category);
+
+-- Create index for timestamp to improve time-based queries
+CREATE INDEX IF NOT EXISTS idx_timestamp ON checkins(timestamp);
+
+-- Create index for venue_id to improve venue-specific queries
+CREATE INDEX IF NOT EXISTS idx_venue_id ON checkins(venue_id);
+
+-- Create index for user_id to improve user-specific queries
+CREATE INDEX IF NOT EXISTS idx_user_id ON checkins(user_id); 

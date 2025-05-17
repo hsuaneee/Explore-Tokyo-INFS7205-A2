@@ -137,7 +137,7 @@ This application provides a platform for exploring spatial relationships and tem
 
 ### Frontend Setup
 
-1. Navigate to the frontend directory:
+1. Open another terminal and navigate to the frontend directory:
    ```bash
    cd frontend
    ```
